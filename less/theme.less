@@ -240,6 +240,7 @@ body {
         margin-bottom: 0;
         z-index: 123;
         color: @color-swatch7;
+        white-space: nowrap;
 
         -webkit-transform: translate(120px, 0px);
         -moz-transform: translate(120px, 0px);
@@ -249,9 +250,8 @@ body {
 
         &:hover {
             color: lighten(@color-swatch7, 10%);
-            background-color: transparent;
+            background-color: rgba(215,222,231,0.19);
             border-color: darken(@color-swatch7, 10%);
-            box-shadow: inset 0px 0px 0px 1px rgba(215,222,231,0.19);
         }
 
 
