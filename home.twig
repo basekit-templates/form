@@ -1,0 +1,21 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<section class="page  home-page">
+
+	{{widget('feature', 'featurehome', {"header": "profile", "defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0%','showBtn': true, "buttonText":"LOREM IPSUM"})|raw}}
+
+	<!-- Zone Content -->
+	<div class="zone-content">
+		<div class="container">
+			<!-- Main Widet Zone -->
+	   		{{zone('main')|raw}}
+		</div>
+	</div>
+	<!-- End Zone Content -->
+
+</section>
+
+<!-- End Home Page Content -->
+{% endblock %}

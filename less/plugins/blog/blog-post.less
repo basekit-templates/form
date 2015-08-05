@@ -1,0 +1,327 @@
+// ---------------------------------------------
+// Scribe Template: CSS > Plugins > Blog > Blog Post
+// ---------------------------------------------
+
+
+@bp-blog-post-layout-vertical: ~"only screen and (max-width : 900px)";
+
+
+// ------------------------------
+// Blog Post
+// ------------------------------
+
+.blogpost {
+
+
+    // Blog Article
+    // ------------------------------
+    .post-article {
+        position: relative;
+        margin-bottom: 2em;
+    }
+
+
+
+
+    // Post Image
+    // ------------------------------
+
+
+    .post-image {
+        // Aspect Ration Setting
+
+        width: 66.66%;
+        float: right;
+
+        @media @bp-blog-post-layout-vertical {
+            width: auto;
+            float: none;
+        }
+    }
+
+
+
+
+        // Image Link
+        // ------------------------------
+
+
+        .image-link {
+            display: block;
+
+            // Container Width * 0.66
+            height: 0;
+            padding-bottom: 56%;
+
+            background-position: center center;
+            background-size: cover;
+
+            .image {
+                display: none;
+            }
+        }
+
+
+
+
+    // Post Content
+    // ------------------------------
+
+
+    .post-content {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+    // Post Excerpt / Post Body
+    // ------------------------------
+
+
+    .post-body {
+        clear: both;
+        margin-left: 33.33%;
+        padding: 70px 70px 70px 0;
+
+        @media @bp-blog-post-layout-vertical {
+            margin-left: 0;
+            padding: 40px;
+        }
+
+        @media @bp-global-small {
+            padding: 20px;
+        }
+    }
+
+
+
+
+    // Post Header
+    // ------------------------------
+
+
+    .post-header {
+        width: 33.33%;
+        background-color: @color-swatch2;
+        padding: 70px;
+
+        @media @bp-blog-post-layout-vertical {
+            width: auto;
+        }
+
+        @media @bp-global-medium {
+            padding: 40px;
+        }
+        @media @bp-global-small {
+            padding: 20px;
+        }
+
+    }
+
+
+
+
+    // Post Title
+    // ------------------------------
+
+
+    .post-title {
+        margin: 0;
+        padding: 0;
+        color: @color-swatch5;
+
+        @media @bp-global-medium, @bp-blog-post-layout-vertical {
+            font-size: bkscale(@font-swatch1-font-size, 0.8);
+            line-height: bkscale(@font-swatch1-line-height, 0.8);
+        }
+
+        @media @bp-global-small {
+            font-size: bkscale(@font-swatch1-font-size, 0.7);
+            line-height: bkscale(@font-swatch1-line-height, 0.7);
+        }
+    }
+
+
+
+
+    // Post Footer
+    // ------------------------------
+
+
+    .post-footer {
+        margin-left: 33.33%;
+
+        @media @bp-blog-post-layout-vertical {
+            margin-left: 0;
+            padding: 40px;
+        }
+
+        @media @bp-global-small {
+            padding: 20px;
+        }
+
+        // Timestamp
+
+        .timestamp {
+            color: fade(@font-swatch5-color, 80%);
+            display: block;
+            margin-bottom: 2em;
+
+            @media @bp-global-medium {
+                font-size: bkscale(@font-swatch5-font-size, 0.9);
+                line-height: bkscale(@font-swatch5-line-height, 0.9);
+            }
+
+            @media @bp-global-small {
+                font-size: bkscale(@font-swatch5-font-size, 0.8);
+                line-height: bkscale(@font-swatch5-line-height, 0.8);
+            }
+        }
+    }
+
+
+
+
+    // Post Attributes
+    // ------------------------------
+
+
+    .post-attributes {
+
+    }
+
+
+
+
+    // Post Category / Post Tags
+    // ------------------------------
+
+
+    .post-category, .post-tags {
+        margin-bottom: 2em;
+
+        @media @bp-global-medium {
+            margin-bottom: 1em;
+        }
+
+        @media @bp-global-small {
+            margin-bottom: 1em;
+        }
+
+        // Links
+
+        a {
+            .underline;
+
+            @media @bp-global-medium {
+                font-size: bkscale(@font-swatch5-font-size, 0.9);
+                line-height: bkscale(@font-swatch5-line-height, 0.9);
+            }
+
+            @media @bp-global-small {
+                font-size: bkscale(@font-swatch5-font-size, 0.8);
+                line-height: bkscale(@font-swatch5-line-height, 0.8);
+            }
+
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+
+
+    // Post Category
+    // ------------------------------
+
+
+    .post-category {
+
+    }
+
+
+
+
+    // Category Title / Tags Title
+    // ------------------------------
+
+
+    .blogpost__category-title,
+    .blogpost__tags-title {
+        font-size: 13px;
+        line-height: 1;
+        color: fade(@font-swatch5-color, 80%);
+        display: block;
+        padding-bottom: 0.5em;
+    }
+
+
+
+
+    // Tags List
+    // ------------------------------
+
+
+    .blogpost__tag-list {
+        display: block;
+    }
+
+
+
+
+    // Tags Item
+    // ------------------------------
+
+
+    .blogpost__tag-item {
+        margin-right: 1.5em;
+
+
+    }
+
+
+
+
+
+
+    // ------------------------------
+    // Sharing Links
+    // ------------------------------
+
+
+
+
+    // Sharing Links
+    // ------------------------------
+
+
+    .blogpost__sharing-links {
+        clear: both;
+    }
+
+    // Network Item
+
+    .blogpost__network-item {
+        @media @bp-global-medium, @bp-global-small {
+            display: block;
+        }
+
+
+
+
+        .button {
+
+            box-shadow: none;
+
+            &:before {
+                background-color: transparent;
+                color: @font-swatch7-color;
+                margin: 0 auto;
+                box-shadow: inset 0px 0px 0px 2px @font-swatch7-color;
+            }
+        }
+    }
+}
