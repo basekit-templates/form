@@ -233,6 +233,18 @@ body {
     overflow: hidden;
 
 
+    // Mobile Positioning
+
+    @media @mobile {
+        position: absolute;
+        padding-left: 0;
+        margin-right: 0;
+        height: 45px;
+        top: 60px;
+        right: 20px;
+    }
+
+
     // Basket Toggle
 
     .basket-toggle {
@@ -252,6 +264,14 @@ body {
             color: lighten(@color-swatch7, 10%);
             background-color: rgba(215,222,231,0.19);
             border-color: darken(@color-swatch7, 10%);
+        }
+
+        @media @mobile {
+            -webkit-transform: translate(110px, 0px);
+            -moz-transform: translate(110px, 0px);
+            -o-transform: translate(110px, 0px);
+            -ms-transform: translate(110px, 0px);
+            transform: translate(110px, 0px);
         }
 
 

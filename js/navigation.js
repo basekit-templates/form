@@ -1,7 +1,7 @@
 // Toggles class open to display/hide the whole navigation
 $( ".widget__extendednavigation" ).addClass( "closed" );
 
-$( ".extendednavigation__navigation-toggle" ).click(function() {
+$( ".extendednavigation__navigation-toggle" ).click(function(e) {
 	$( ".widget__extendednavigation" ).toggleClass( "open" ).toggleClass( "closed" );
 
     $( ".page-content" ).toggleClass( "navigation--open" );
