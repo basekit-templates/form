@@ -1,10 +1,10 @@
 {
     "name":"Form",
     "widgetVersion": 2,
-    "thumbnail":"scribe.png",
+    "thumbnail":"form.png",
     "templateType":"ecommerce",
     "pageTypes": ["home"],
-    "screenshot":"scribe-screenshot.jpg",
+    "screenshot":"form-screenshot.jpg",
     "tags": {
     "en": ["business", "corporate", "company", "corporation", "professional"],
     "es": ["negocios", "corporativo", "empresa", "corporativo", "profesional"],
