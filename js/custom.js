@@ -64,4 +64,10 @@ $(document).ready(function() {
         $( "#page-zones__template-widgets__ecombasket-shopbasket" ).removeClass( "show-content" );
         $( "#page-zones__template-widgets__ecombasket-shopbasket-mobile" ).removeClass( "show-content" );
     });
+
+
+    // Toggles class to stop scrolling when basket is open
+     $( ".ecombasket__basket-toggle" ).click(function() {
+        $( ".page-content" ).toggleClass( "basket--open" );
+    });
 });
