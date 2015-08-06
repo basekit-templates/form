@@ -232,9 +232,15 @@ body {
     margin-right: 10px;
     overflow: hidden;
 
-    -webkit-flex: 1 0 auto;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+
+    @media @tablet {
+        -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
         flex: 1 0 auto;
+    }
 
 
     // Mobile Positioning
