@@ -255,6 +255,13 @@ body {
     }
 
 
+    // Basket Icon
+
+    .button.icon {
+        padding-left: 58px;
+    }
+
+
     // Basket Toggle
 
     .basket-toggle {
@@ -274,13 +281,6 @@ body {
             color: lighten(@color-swatch7, 10%);
             background-color: rgba(215,222,231,0.19);
             border-color: darken(@color-swatch7, 10%);
-        }
-
-
-        // Basket Icon
-
-        button.icon {
-            padding-left: 58px;
         }
 
         &:before {
@@ -325,6 +325,12 @@ body {
                 padding-top: 0;
                 border-top: 0;
             }
+
+            @media @mobile {
+                -webkit-flex-wrap: wrap;
+                -moz-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+            }
         }
 
 
@@ -332,6 +338,10 @@ body {
         .basket-item-details {
             display: inline-block;
             margin-right: 20px;
+
+            @media @mobile {
+                margin-right: 0;
+            }
         }
 
 
@@ -357,6 +367,10 @@ body {
             -ms-flex-align: center;
             align-self: center;
             padding-right: 25px;
+
+            @media @mobile {
+                padding-right: 0;
+            }
         }
     }
 
@@ -439,6 +453,10 @@ body {
                 bottom: inherit;
                 top: inherit;
                 padding: 5px;
+            }
+
+            @media @mobile {
+                position: absolute;
             }
         }
 
