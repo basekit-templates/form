@@ -62,5 +62,6 @@ $(document).ready(function() {
 
     $('.basket-body').click(function() {
         $( "#page-zones__template-widgets__ecombasket-shopbasket" ).removeClass( "show-content" );
+        $( "#page-zones__template-widgets__ecombasket-shopbasket-mobile" ).removeClass( "show-content" );
     });
 });

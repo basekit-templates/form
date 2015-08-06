@@ -2,42 +2,49 @@
 // Scribe Template: CSS > Widgets > Basket.less
 // --------------------------------------------
 
+.template-basket-mobile {
+    display: none;
+
+    background-color: darken(@color-swatch1, 5%);
+    margin-right: 0;
+    padding-left: 0;
+
+    @media @bp-global-small {
+        display: block;
+    }
+
+    &:hover {
+        background-color: rgba(215,222,231,0.19);
+    }
+
+
+    .button.icon {
+        padding-left: 32px;
+    }
+
+
+    .ecombasket {
+        text-align: center;
+    }
+}
+
 
 
 .template-basket {
-    padding-left: 10px;
-    margin-right: 10px;
+    @media @bp-global-small {
+        display: none;
+    }
+}
+
+
+
+.template-basket,
+.template-basket-mobile {
     overflow: hidden;
 
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
         flex: 0 1 auto;
-
-    // @media @tablet {
-    //     -webkit-flex: 1 0 auto;
-    //     -ms-flex: 1 0 auto;
-    //     flex: 1 0 auto;
-    // }
-
-
-    // Mobile Positioning
-
-    // @media @bp-global-small {
-    //     position: absolute;
-    //     padding-left: 0;
-    //     margin-right: 0;
-    //     height: 45px;
-    //     top: 60px;
-    //     right: 0;
-    // }
-
-
-    // Basket Icon
-    // --------------------
-
-    .button.icon {
-        padding-left: 58px;
-    }
 
 
     // Basket Toggle
@@ -50,16 +57,10 @@
         color: @color-swatch7;
         white-space: nowrap;
 
-        -webkit-transform: translate(120px, 0px);
-        -moz-transform: translate(120px, 0px);
-        -o-transform: translate(120px, 0px);
-        -ms-transform: translate(120px, 0px);
-        transform: translate(120px, 0px);
-
         &:hover {
             color: lighten(@color-swatch7, 10%);
             background-color: rgba(215,222,231,0.19);
-            border-color: darken(@color-swatch7, 10%);
+            border-color: lighten(@color-swatch7, 10%);
         }
 
         &:before {
@@ -70,6 +71,13 @@
             &:hover {
                 color: lighten(@color-swatch7,10%);
             }
+        }
+
+        // Basket Icon
+        // --------------------
+
+        .button.icon {
+            padding-left: 58px;
         }
     }
 
@@ -229,7 +237,7 @@
     .item-remove {
         padding: 0;
         box-shadow: none;
-        top: 0;
+        top: 10px;
         right: 30px;
 
         &:hover {
