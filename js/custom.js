@@ -1,19 +1,39 @@
-// Makes the whole ecom product tiles clickable
+
 $(document).ready(function() {
 
-    $('.product-item').each(function() {
+    // Makes the whole ecom product tiles clickable
+
+     $('.product-item').each(function() {
         var href = $(this).find("a").attr("href");
         if(href) {
             $(this).addClass("clickable");
         }
     });
 
-    $('.product-item').click(function() {
-        var href = $(this).find("a").attr("href");
-        if(href) {
-            window.location = href;
+
+    metaKeyPressed = false;
+
+    $(window).keydown(function(e) {
+        if (e.ctrlKey || e.metaKey) {
+            metaKeyPressed = true;
         }
     });
+
+
+    $('.product-item').click(function() {
+
+        var href = $(this).find("a").attr("href");
+        if(href) {
+
+            if (metaKeyPressed == true) {
+                 window.open(href, '_blank');
+            } else {
+                window.location = href;
+            }
+        }
+
+    });
+
 
     // Adds variation class when there is only one product image
 
@@ -56,18 +76,23 @@ $(document).ready(function() {
             $('ul.product-gallery li:last').prependTo('ul.product-gallery');
         }
     });
+});
 
 
-    // Basket widget clickable body
 
-    $('.basket-body').click(function() {
+$(document).on("click", ".ecombasket__basket-toggle", function() {
+    $( "body, html" ).toggleClass( "basket--open" );
+});
+
+$(document).click(function(event) {
+    if( $(event.target).is(".basket-body") ) {
+        closeEverything();
+    }
+});
+
+$('.ecombasket__basket-body').click(function(e) {
+    if (e.target == this) {
+        $( "body, html" ).removeClass( "basket--open" );
         $( "#page-zones__template-widgets__ecombasket-shopbasket" ).removeClass( "show-content" );
-        $( "#page-zones__template-widgets__ecombasket-shopbasket-mobile" ).removeClass( "show-content" );
-    });
-
-
-    // Toggles class to stop scrolling when basket is open
-     $( ".ecombasket__basket-toggle" ).click(function() {
-        $( ".page-content" ).toggleClass( "basket--open" );
-    });
+    }
 });
