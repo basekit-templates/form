@@ -50,10 +50,18 @@
 
     }
 
+    .basket-item-details {
+        margin-right: 40px !important;
+    }
+
 }
 
 
 .template-basket {
+    @media @bp-global-small {
+        display: none;
+    }
+
 
     // Image
     .image-link {
@@ -62,25 +70,18 @@
         width: 125px;
 
     }
-}
 
-
-
-
-
-.template-basket {
-
-    // Basket Icon
-    // --------------------
-
-    .button.icon {
-        padding-left: 52px;
+    .basket-item-name {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: @font-swatch1-font-family;
     }
 
-    @media @bp-global-small {
-        display: none;
+    .item-quantity {
+        font-size: 16px;
     }
 }
+
 
 
 
@@ -163,6 +164,10 @@
                 -moz-flex-wrap: wrap;
                 -ms-flex-wrap: wrap;
             }
+
+
+
+
         }
 
 
@@ -267,24 +272,27 @@
     // Basket Remove Button
 
     .item-remove {
+        padding-left: 0;
         padding: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
         box-shadow: none;
-        top: 10px;
-        right: 30px;
+        top: 0;
+        right: 0;
 
         &:hover {
             background-color: transparent;
         }
 
         &:before {
-            left: inherit;
-            bottom: inherit;
-            top: inherit;
-            padding: 5px;
+            width: 40px;
+            height: 40px;
         }
 
         @media @bp-global-small {
             position: absolute;
+            top: 20px;
         }
     }
 
