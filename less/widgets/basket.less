@@ -306,6 +306,7 @@
 
 
     // Basket Footer
+
     .basket-footer {
         margin-top: 0;
         border-top: 1px solid darken(@color-swatch1, 5%);
@@ -323,6 +324,17 @@
 
         @media @bp-global-small {
             padding: 10px;
+        }
+
+        .basket-total,
+        .button {
+            @media @bp-global-small {
+                font-size: 15px;
+            }
+        }
+
+        .button {
+            padding: 0 16px;
         }
     }
 }
