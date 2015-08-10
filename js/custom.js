@@ -84,15 +84,26 @@ $(document).on("click", ".ecombasket__basket-toggle", function() {
     $( "body, html" ).toggleClass( "basket--open" );
 });
 
-$(document).click(function(event) {
-    if( $(event.target).is(".basket-body") ) {
-        closeEverything();
-    }
-});
 
 $('.ecombasket__basket-body').click(function(e) {
     if (e.target == this) {
         $( "body, html" ).removeClass( "basket--open" );
         $( "#page-zones__template-widgets__ecombasket-shopbasket" ).removeClass( "show-content" );
+    }
+});
+
+
+
+// Close Everything
+// ----------------
+
+function closeEverything() {
+    $( "body, html" ).removeClass( "basket--open" );
+    $( "#page-zones__template-widgets__ecombasket-shopbasket" ).removeClass( "show-content" );
+}
+
+$(document).click(function(event) {
+    if( $(event.target).is(".basket-body") ) {
+        closeEverything();
     }
 });
