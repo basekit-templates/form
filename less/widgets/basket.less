@@ -127,19 +127,6 @@
     .basket-list {
         max-height: 100%;
         overflow: auto;
-
-        &:before {
-            content: "\f057";
-            font-family: 'FontAwesome', sans-serif;
-             text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            position: absolute;
-            top: 20px;
-            font-size: 30px;
-            left: 50%;
-            color: #fff;
-        }
     }
 
     .basket-list,
@@ -275,6 +262,19 @@
 
         @media @bp-global-small {
             padding: 50px 25px 25px;
+        }
+
+        &:before {
+            content: "\f057";
+            font-family: 'FontAwesome', sans-serif;
+             text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            top: 20px;
+            font-size: 30px;
+            left: 50%;
+            color: #fff;
         }
     }
 
