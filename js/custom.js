@@ -84,11 +84,11 @@ $(document).on("click", ".ecombasket__basket-toggle", function() {
     $( "body, html" ).toggleClass( "basket--open" );
 });
 
-// $(document).click(function(event) {
-//     if( $(event.target).is(".basket-body") ) {
-//         closeEverything();
-//     }
-// });
+$(document).click(function(event) {
+    if( $(event.target).is(".basket-body") ) {
+        closeEverything();
+    }
+});
 
 $('.ecombasket__basket-body').click(function(e) {
     if (e.target == this) {
