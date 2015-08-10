@@ -127,6 +127,19 @@
     .basket-list {
         max-height: 100%;
         overflow: auto;
+
+        &:before {
+            content: "\f057";
+            font-family: 'FontAwesome', sans-serif;
+             text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            top: 20px;
+            font-size: 30px;
+            left: 50%;
+            color: #fff;
+        }
     }
 
     .basket-list,
@@ -322,6 +335,10 @@
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
         justify-content: space-between;
+
+        @media @bp-global-medium {
+            min-height: 70px;
+        }
 
         @media @bp-global-small {
             padding: 10px;
