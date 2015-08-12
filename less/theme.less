@@ -59,12 +59,6 @@ body {
         width: 2000px;
         margin: 0 auto;
     }
-
-    // Container
-
-    .container {
-
-    }
 }
 
 
@@ -222,12 +216,385 @@ body {
 }
 
 
-
+// ------------------------------
 // Template Basket
 // ------------------------------
 
 
 // @import "@{templateLocal}/less/widgets/basket.less";
+
+.template-basket-mobile {
+    display: none;
+    background-color: darken(@color-swatch1, 5%);
+    margin-right: 0;
+    padding-left: 0;
+
+    @media @bp-global-small {
+        display: block;
+    }
+
+    &:hover {
+        background-color: rgba(215,222,231,0.19);
+    }
+
+    .basket-toggle {
+        padding-left: 42px;
+        width: 100%;
+        text-align: center;
+
+        &:before {
+            position: static;
+            margin-right: 10px;
+        }
+    }
+
+    .basket-item-name {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: @font-swatch1-font-family;
+    }
+
+    .item-quantity {
+        font-size: 14px;
+    }
+
+    .basket-item-image {
+        margin-right: 10px !important;
+    }
+
+     // Image
+
+    .image-link {
+        line-height: 80px;
+        height: 80px;
+        width: 80px;
+
+    }
+
+    .basket-item-details {
+        margin-right: 40px !important;
+    }
+
+}
+
+
+.template-basket {
+    @media @bp-global-small {
+        display: none;
+    }
+
+
+    // Image
+    .image-link {
+        line-height: 125px;
+        height: 125px;
+        width: 125px;
+
+    }
+
+    .basket-item-name {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: @font-swatch1-font-family;
+    }
+
+    .item-quantity {
+        font-size: 16px;
+    }
+}
+
+
+
+.template-basket,
+.template-basket-mobile {
+    overflow: hidden;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+
+
+    // Basket Toggle
+    // --------------------
+
+    .basket-toggle {
+        box-shadow: none;
+        margin-bottom: 0;
+        z-index: 123;
+        color: @color-swatch7;
+        white-space: nowrap;
+
+        &:hover {
+            color: lighten(@color-swatch7, 10%);
+            background-color: rgba(215,222,231,0.19);
+            border-color: lighten(@color-swatch7, 10%);
+        }
+
+        &:before {
+            color: @color-swatch7;
+            background-color: transparent;
+            font-size: 25px;
+
+            &:hover {
+                color: lighten(@color-swatch7,10%);
+            }
+        }
+    }
+
+
+    // Basket List
+    // --------------------
+
+    .basket-list {
+        max-height: 100%;
+        overflow: auto;
+    }
+
+    .basket-list,
+    .basket-footer {
+        background-color: #fff;
+        padding: 30px;
+        width: 100%;
+        max-width: 800px;
+
+
+        // Basket Item
+        // --------------------
+
+        .basket-item {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: nowrap;
+            -moz-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            border-top: 1px solid darken(@color-swatch1, 5%);
+            margin-bottom: 25px;
+            padding-top: 20px;
+
+            &:first-child {
+                padding-top: 0;
+                border-top: 0;
+            }
+
+            @media @bp-global-small {
+                -webkit-flex-wrap: wrap;
+                -moz-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+            }
+        }
+
+
+        .basket-item-image,
+        .basket-item-details {
+            display: inline-block;
+            margin-right: 20px;
+
+            @media @bp-global-small {
+                margin-right: 0;
+            }
+        }
+
+
+
+
+
+        // Details
+
+        .basket-item-details {
+            -webkit-flex: 1 1 auto;
+            -moz-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-align-self: center;
+            -moz-align-self: center;
+            -ms-align-self: center;
+            -ms-flex-item-align: center;
+            -ms-flex-align: center;
+            align-self: center;
+            padding-right: 25px;
+
+            @media @bp-global-small {
+                padding-right: 0;
+            }
+        }
+    }
+
+
+
+
+    // Basket When Closed
+    // --------------------
+
+    .basket-body {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: flex;
+        -webkit-box-orient: column;
+        -webkit-box-direction: column;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+
+
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        padding: 90px 25px 100px;
+        background: fade(#000,80%);
+
+        visibility: hidden;
+        opacity: 0;
+
+        -webkit-transition: opacity 0.3s linear;
+        -moz-transition: opacity 0.3s linear;
+        -o-transition: opacity 0.3s linear;
+        transition: opacity 0.3s linear;
+
+        @media @bp-global-small {
+            padding: 50px 25px 25px;
+        }
+
+        // Close the basket button
+
+        &:before {
+            content: "\f057";
+            font-family: 'FontAwesome', sans-serif;
+             text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            top: 10px;
+            font-size: 30px;
+            left: 50%;
+            color: #fff;
+        }
+    }
+
+
+
+
+    .basket-toggle {
+        background-color: #fff;
+    }
+
+
+    // Basket Remove Button
+
+    // LESS framework reset
+    .basket-item .button.icon {
+        padding-left: 0;
+    }
+
+    .item-remove {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        box-shadow: none;
+        top: 0;
+        right: 0;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:before {
+            width: 40px;
+            height: 40px;
+        }
+
+        @media @bp-global-small {
+            position: absolute;
+            top: 20px;
+        }
+    }
+
+    .remove-text {
+        display: none;
+    }
+
+
+    // Basket Footer
+
+    .basket-footer {
+        margin-top: 0;
+        border-top: 1px solid darken(@color-swatch1, 5%);
+        min-height: 60px;
+
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+        @media @bp-global-small {
+            padding: 10px;
+        }
+
+        .basket-total,
+        .button {
+            @media @bp-global-small {
+                font-size: 15px;
+            }
+        }
+
+        .button {
+            padding: 0 16px;
+
+            @media @bp-global-small {
+                line-height: bkscale(@font-swatch7-font-size, 2.2);
+            }
+        }
+    }
+}
+
+
+// Basket is open
+// --------------------
+
+.basket--open {
+    height: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+
+    .basket-body {
+        visibility: visible;
+        opacity: 1;
+         z-index: 9999;
+    }
+
+}
 
 
 
