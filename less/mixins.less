@@ -1,5 +1,5 @@
 // ------------------------------
-// Form Template: CSS > Mixins
+// Scribe Template: CSS > Mixins
 // ------------------------------
 
 
@@ -19,15 +19,13 @@
 // Underline Links
 // ----------------------------------
 .underline {
-    color: @color-swatch7;
-    box-shadow: inset 0px -1px 0px 0px fade(@color-swatch7, 30%);
+    color: @color__link--text;
+    box-shadow: inset 0px -1px 0px 0px fade(@color__link--text, 30%);
     display: inline-block;
     line-height: 1.8;
 
     &:hover {
-        box-shadow: inset 0px -2px 0px 0px fade(@color-swatch7, 100%);
-        color: @color-swatch7-alt;
+        box-shadow: inset 0px -2px 0px 0px fade(@color__link--text, 100%);
+        color: @color__secondary-alt;
     }
 }
-
-

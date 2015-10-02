@@ -1,5 +1,5 @@
 // --------------------------------------
-// Form Template: CSS > Widgets > Slideshow
+// Scribe Template: CSS > Widgets > Slideshow
 // --------------------------------------
 
 
@@ -134,7 +134,7 @@
 	left: 0;
 	right: 0;
 	min-height: 50px;
-	background-color: @color-swatch2;
+	background-color: @color__primary;
 	margin: 0;
 
 	@media @bp-global-small {
@@ -167,12 +167,12 @@
 		}
 
 		&:hover {
-			background-color: @color-swatch2-alt;
+			background-color: @color__primary--alt;
 		}
 
 		&:before {
 			margin: 0;
-			color: @font-swatch7-color;
+			color: @color__button--text;
 			background-color: transparent;
 		}
 	}
@@ -306,6 +306,7 @@
 	margin: 0;
 	position: relative;
 	display: inline-block;
+	color: @color__slideshow-title--text;
 	&:after {
 		display: none;
 	}
@@ -319,7 +320,7 @@
 
 
 .responsiveslideshow__image-description {
-
+	color: @color__slideshow-description--text;
 }
 
 
@@ -333,7 +334,7 @@
 	bottom: 0;
 	right: auto;
 	padding: 7px 10px;
-	background-color: fade(@color-swatch1, 80%);
+	background-color: @color__slideshow-caption--background;
 
 	@media @bp-global-medium {
 		padding: 10px 25px 15px;
@@ -371,11 +372,11 @@
 	// Button
 
 	.button {
-		background-color: @font-swatch7-color;
+		background-color: @color__button--text;
 		line-height: 1;
 		&:hover {
 			background-color: transparent;
-			box-shadow: inset 0px 0px 0px 5px @font-swatch7-color;
+			box-shadow: inset 0px 0px 0px 5px @color__button--text;
 		}
 	}
 
@@ -383,7 +384,7 @@
 
 	&.selected .button {
 		background-color: transparent;
-		box-shadow: inset 0px 0px 0px 2px @font-swatch7-color;
+		box-shadow: inset 0px 0px 0px 2px @color__button--text;
 	}
 }
 
@@ -461,11 +462,7 @@
 		}
 	}
 
-	// Selected Button
 
-	&.selected .button {
-		background-color: @color-swatch7;
-	}
 }
 
 

@@ -1,5 +1,5 @@
 // ---------------------------------------------
-// Form Template: CSS > Plugins > Blog > Blog Post
+// Scribe Template: CSS > Plugins > Blog > Blog Post
 // ---------------------------------------------
 
 
@@ -104,7 +104,7 @@
 
     .post-header {
         width: 33.33%;
-        background-color: @color-swatch2;
+        background-color: @color__blogpost-title--background;
         padding: 70px;
 
         @media @bp-blog-post-layout-vertical {
@@ -130,7 +130,7 @@
     .post-title {
         margin: 0;
         padding: 0;
-        color: @color-swatch5;
+        color: @color__blogpost-title--text;
 
         @media @bp-global-medium, @bp-blog-post-layout-vertical {
             font-size: bkscale(@font-swatch1-font-size, 0.8);
@@ -165,7 +165,7 @@
         // Timestamp
 
         .timestamp {
-            color: fade(@font-swatch5-color, 80%);
+            color: fade(@color__p--text, 80%);
             display: block;
             margin-bottom: 2em;
 
@@ -253,7 +253,7 @@
     .blogpost__tags-title {
         font-size: 13px;
         line-height: 1;
-        color: fade(@font-swatch5-color, 80%);
+        color: fade(@color__p--text, 80%);
         display: block;
         padding-bottom: 0.5em;
     }
@@ -318,9 +318,9 @@
 
             &:before {
                 background-color: transparent;
-                color: @font-swatch7-color;
+                color: @color__button--text;
                 margin: 0 auto;
-                box-shadow: inset 0px 0px 0px 2px @font-swatch7-color;
+                box-shadow: inset 0px 0px 0px 2px @color__button--border;
             }
         }
     }

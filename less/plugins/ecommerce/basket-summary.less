@@ -1,5 +1,5 @@
 // -------------------------------------------------------
-// Form Template: CSS > Plugins > Ecommerce > Basket Summary
+// Scribe Template: CSS > Plugins > Ecommerce > Basket Summary
 // -------------------------------------------------------
 
 
@@ -88,7 +88,7 @@
 
     .table-row:not(.table-row--heading):not(.table-row--order-total) {
         .cell  {
-            background-color: @color-swatch2;
+            background-color: @color__primary;
         }
     }
 
@@ -133,7 +133,7 @@
         // Item Link
 
         .summary-item-link {
-            color: @font-swatch5-color;
+            color: @color__p--text;
         }
 
 
@@ -173,7 +173,7 @@
 
     .cell--order-total {
         text-align: right;
-        background-color: @color-swatch1;
+        background-color: @color__body--background;
     }
 
 
@@ -215,7 +215,7 @@
 
         // Order Total
         .order-total {
-            color: @font-swatch5-color;
+            color: @color__p--text;
         }
 }
 
@@ -245,7 +245,7 @@
     // Quantity Field
 
     .quantity-field {
-        color: @font-swatch5-color;
+        color: @color__p--text;
     }
 }
 
@@ -314,7 +314,7 @@
 
         .table-row {
             overflow: hidden;
-            background-color: @color-swatch2;
+            background-color: @color__primary;
             margin-bottom: 10px;
             clear: both;
             border-bottom: none;
@@ -339,7 +339,7 @@
                 content: attr(data-title);
                 display: block;
                 font-size: 13px;
-                color: fade(@font-swatch5-color, 80%);
+                color: fade(@color__p--text, 80%);
             }
         }
 
@@ -371,7 +371,7 @@
             width: 80px;
             max-width: 100%;
             .button--quantity {
-                border: 5px solid @color-swatch2;
+                border: 5px solid @color__primary;
                 line-height: 20px;
             }
         }
@@ -393,9 +393,9 @@
         .cell--price, .cell--total {
             float: left;
             width: 50%;
-            border-top: 1px solid @color-swatch1 !important;
+            border-top: 1px solid @color__body--background !important;
             padding: 6px 10px;
-            background-color: darken(@color-swatch1, 8%) !important;
+            background-color: darken(@color__body--background, 8%) !important;
         }
     }
 }

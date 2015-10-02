@@ -1,5 +1,5 @@
 // ---------------------------------------------------------
-// Form Template: CSS > Plugins > Ecommerce > Products Listing
+// Scribe Template: CSS > Plugins > Ecommerce > Products Listing
 // ---------------------------------------------------------
 
 
@@ -42,7 +42,7 @@
     .fieldset--search {
         padding: 20px 70px;
         width: 33.33%;
-        background-color: @color-swatch2;
+        background-color: darken(desaturate(@color__ecomproductslist-filters--background, 10%), 5%);
 
         @media @bp-global-small{
             width: auto;
@@ -68,7 +68,7 @@
 .ecomproductslist__fieldset--filters {
     padding: 20px 70px;
     width: 66.66%;
-    background-color: @color-swatch2-alt;
+    background-color: @color__ecomproductslist-filters--background;
 
     @media  @bp-global-small{
          width: 100%;
@@ -165,7 +165,7 @@
     .label {
         font-size: 13px;
         line-height: 1;
-        color: fade(@font-swatch5-color, 70%);
+        color: fade(@color__p--text, 70%);
         display: block;
         padding-bottom: 0;
         margin-bottom: 5px;
@@ -216,8 +216,8 @@
     clear: both;
     font-size: bkscale(@font-swatch5-font-size, 0.72);
     line-height: bkscale(@font-swatch5-line-height, 0.72);
-    color: fade(@font-swatch5-color, 80%);
-    border-bottom: 1px solid fade(@font-swatch5-color, 16%);
+    color: fade(@color__p--text, 80%);
+    border-bottom: 1px solid fade(@color__p--text, 16%);
 
     @media @bp-global-large {
         padding: 20px 70px;
@@ -331,7 +331,7 @@
                 position: absolute;
                 text-align: center;
                 line-height: bkscale(@font-swatch7-font-size, 3);
-                color: @font-swatch7-color;
+                color: @color__button--text;
                 font-size: 18px;
                 top: 0;
                 left: 0;
@@ -404,8 +404,8 @@
 
 
 .product-item {
-    border-right: 1px solid fade(@font-swatch5-color, 16%);
-    box-shadow: inset 0px -1px 0px 0px fade(@font-swatch5-color, 16%);
+    border-right: 1px solid fade(@color__p--text, 16%);
+    box-shadow: inset 0px -1px 0px 0px fade(@color__p--text, 16%);
 
     @media @bp-global-large {
         padding: 70px;
@@ -430,7 +430,7 @@
         -o-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out;
         &:hover {
-            box-shadow: inset 0px 0px 0px 6px fade(@font-swatch5-color, 16%);
+            box-shadow: inset 0px 0px 0px 6px fade(@color__p--text, 16%);
 
             // Title Link
 
@@ -569,7 +569,7 @@
 
     .title-link {
         .underline;
-        color: @font-swatch5-color;
+        color: @color__ecomproductslist-product-title--text;
     }
 }
 
@@ -581,7 +581,7 @@
 .product-item-price {
     font-size: bkscale(@font-swatch5-font-size, 0.82);
     line-height: bkscale(@font-swatch5-line-height, 0.82);
-    color: @font-swatch5-color;
+    color: @color__ecomproductslist-product-price--text;
     @media @mobile {
         font-size: bkscale(@font-swatch5-font-size, 0.7);
         line-height: bkscale(@font-swatch5-line-height, 0.7);

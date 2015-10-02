@@ -1,5 +1,5 @@
 // ------------------------------------
-// Form Template: CSS > Widgets > Gallery
+// Scribe Template: CSS > Widgets > Gallery
 // ------------------------------------
 
 
@@ -98,7 +98,7 @@
 // Captions fade in/out
 
 .caption-link {
-	background-color: fade(@font-swatch5-color, 50%);
+	background-color: @color__gallery-caption--background;
 	padding: 60px 70px;
 	position: absolute;
 	top: 0;
@@ -137,7 +137,7 @@
 // Image Title
 
 .gallery__image-title {
-	color: @color-swatch1;
+	color: @color__gallery-title--text;
 	margin-top: 0;
 
 	font-family: @font-swatch1-font-family;
@@ -155,7 +155,7 @@
     }
 
 	&:after {
-		background-color: @color-swatch1;
+		background-color: @color__gallery-title--text;
 	}
 }
 
@@ -163,7 +163,7 @@
 // Gallery Image Description
 
 .gallery__image-description {
-	color: @color-swatch1;
+	color: @color__gallery-description--text;
 	@media @mobile {
 		display: none;
 	}

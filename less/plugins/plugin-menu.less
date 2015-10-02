@@ -1,5 +1,5 @@
 // -------------------------------
-// Form Template: CSS > Plugin: Menu
+// Scribe Template: CSS > Plugin: Menu
 // -------------------------------
 
 // -----------------------------
@@ -58,7 +58,7 @@
 
 
 .section-header {
-    background-color: @color-swatch2;
+    background-color: @color__menu-section-header--background;
     @media @bp-global-large {
         padding: 30px 70px;
     }
@@ -82,7 +82,7 @@
 .section-title {
     font-size: @font-swatch1-font-size;
     padding-bottom: 0.3em;
-    color: @font-swatch5-color;
+    color: @color__p--text;
     @media @bp-global-medium {
         font-size: bkscale(@font-swatch1-font-size, 0.82);
         line-height: bkscale(@font-swatch1-line-height, 0.82);
@@ -154,7 +154,7 @@
     -ms-flex-align: stretch;
     align-items: stretch;
 
-    background-color: fade(@font-swatch5-color, 3%);
+    background-color: @color__menu--background;
 
 
 }
@@ -241,8 +241,8 @@
     display: block;
     margin-bottom: 0;
     text-align: center;
-    border-right: 1px solid fade(@font-swatch5-color, 16%);
-    box-shadow: inset 0px -1px 0px 0px fade(@font-swatch5-color, 16%);
+    border-right: 1px solid fade(@color__p--text, 16%);
+    box-shadow: inset 0px -1px 0px 0px fade(@color__p--text, 16%);
 
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -330,7 +330,7 @@
     // Item Title
 
     .item-title {
-        color: @font-swatch5-color;
+        color: @color__p--text;
         font-size: @font-swatch2-font-size;
         line-height: @font-swatch2-line-height;
         @media @bp-global-medium {
@@ -351,7 +351,7 @@
 
         &, p {
             font-family: @font-swatch1-font-family;
-            color: fade(@font-swatch5-color, 70%);
+            color: fade(@color__p--text, 70%);
             @media @bp-global-medium {
                 font-size: bkscale(@font-swatch5-font-size, 0.82);
                 line-height: bkscale(@font-swatch5-line-height, 0.82);
@@ -374,13 +374,13 @@
 
     .item-subtitle {
         font-size: 12px;
-        color: fade(@font-swatch5-color, 50%);
+        color: fade(@color__p--text, 50%);
     }
 
     // Item Details
 
     .item-details {
-        color: fade(@font-swatch5-color, 70%);
+        color: fade(@color__p--text, 70%);
         font-size: bkscale(@font-swatch5-font-size, 0.8);
         line-height: bkscale(@font-swatch5-line-height, 0.8);
 
@@ -406,7 +406,7 @@
     // Dietary Item
 
     .dietary-item {
-        color: fade(@font-swatch5-color, 70%);
+        color: fade(@color__p--text, 70%);
         font-size: bkscale(@font-swatch5-font-size, 0.8);
         line-height: bkscale(@font-swatch5-line-height, 0.8);
 
@@ -423,7 +423,7 @@
             content: '';
             width: 0.4em;
             height: 0.4em;
-            background-color: fade(@font-swatch5-color, 20%);
+            background-color: fade(@color__p--text, 20%);
             display: inline-block;
             overflow: hidden;
             vertical-align: middle;
@@ -489,7 +489,7 @@
             display: block;
             margin: 5px auto;
             width: 65%;
-            background-color: @color-swatch2-alt;
+            background-color: @color__primary--alt;
         }
     }
 
@@ -497,7 +497,7 @@
 
     .item-description {
         &, p {
-            color: @font-swatch5-color;
+            color: @color__p--text;
         }
     }
 
@@ -516,9 +516,9 @@
 .menu-subsection {
     margin: -1px 0 0 0;
     position: relative;
-    background-color: @color-swatch1;
-    border-top: 1px solid fade(@font-swatch5-color, 16%);
-    border-bottom: 1px solid fade(@font-swatch5-color, 16%);
+    background-color: @color__body--background;
+    border-top: 1px solid fade(@color__p--text, 16%);
+    border-bottom: 1px solid fade(@color__p--text, 16%);
 
 
     @media @bp-global-large {
@@ -541,7 +541,7 @@
             display: block;
             height: 1px;
             overflow: hidden;
-            background-color: @color-swatch1;
+            background-color: @color__body--background;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -555,8 +555,8 @@
 
 
     .section-header {
-        background-color: fade(@font-swatch5-color, 3%);
-        border-bottom: 1px solid fade(@font-swatch5-color, 16%);
+        background-color: fade(@color__p--text, 3%);
+        border-bottom: 1px solid fade(@color__p--text, 16%);
         @media @bp-global-large {
             padding: 30px;
         }
@@ -612,7 +612,7 @@
     .section-subtitle {
         font-size: bkscale(@font-swatch5-font-size, 0.8);
         line-height: bkscale(@font-swatch5-line-height, 0.8);
-        color: @font-swatch5-color;
+        color: @color__p--text;
         padding-bottom: 0;
         @media @bp-global-medium {
             font-size: bkscale(@font-swatch5-font-size, 0.7);
@@ -672,7 +672,7 @@
 
 .menu-section--featured {
     margin-bottom: 0;
-    background-color: @color-swatch1;
+    background-color: @color__body--background;
     padding: 0;
 
     .menu-item {
@@ -680,7 +680,7 @@
     }
 
     .section-header {
-        background-color: @color-swatch2;
+        background-color: @color__menu-section-featured--background;
         border-bottom: none;
     }
 }
@@ -704,7 +704,7 @@
 
 .menusections-list {
     margin: 0;
-    background: @color-swatch2-alt;
+    background: @color__menusections--background;
     padding: 20px 70px;
 
     @media @bp-global-medium {
@@ -719,14 +719,14 @@
     // Menu Item Name
 
     .menu-item-name {
-        color: @font-swatch5-color;
-        box-shadow: inset 0px -1px 0px 0px fade(@font-swatch5-color, 30%);
+        color: @color__p--text;
+        box-shadow: inset 0px -1px 0px 0px fade(@color__p--text, 30%);
         display: inline-block;
         line-height: 1.8;
 
         &:hover {
-            box-shadow: inset 0px -2px 0px 0px fade(@font-swatch5-color, 100%);
-            color: @font-swatch5-color;
+            box-shadow: inset 0px -2px 0px 0px fade(@color__p--text, 100%);
+            color: @color__p--text;
         }
 
         @media @bp-global-medium {

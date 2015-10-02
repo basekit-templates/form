@@ -1,5 +1,5 @@
 // ---------------------------------------------------
-// Form Template: CSS > Plugins > Blog > Blog Posts List
+// Scribe Template: CSS > Plugins > Blog > Blog Posts List
 // ---------------------------------------------------
 
 
@@ -53,10 +53,10 @@
     .post-article {
         position: relative;
         width: 33.33%;
-        background-color: @color-swatch2;
+        background-color: @color__blogpostlist-article--background;
         margin-bottom: 0;
         &:nth-child(2n) {
-            background-color: @color-swatch2-alt;
+            background-color: darken(desaturate(@color__blogpostlist-article--background, 10%), 5%);
         }
 
         @media @bp-global-medium {
@@ -151,10 +151,10 @@
         // Title Link
 
         .title-link {
-            color: @font-swatch5-color;
+            color: @color__p--text;
             line-height: @font-swatch2-line-height;
             &:hover {
-                box-shadow: inset 0px -1px 0px 0px @font-swatch5-color;
+                box-shadow: inset 0px -1px 0px 0px @color__p--text;
             }
         }
 
@@ -179,10 +179,10 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        box-shadow: inset 0px -1px 0px 0px @font-swatch5-color;
+        box-shadow: inset 0px -1px 0px 0px @color__p--text;
         display: inline-block;
         line-height: 1.5;
-        color: @font-swatch5-color;
+        color: @color__p--text;
 
         @media @bp-global-large {
             margin: 0 0 70px 70px;
@@ -199,7 +199,7 @@
         }
 
         &:hover {
-            box-shadow: inset 0px -2px 0px 0px @font-swatch5-color;
+            box-shadow: inset 0px -2px 0px 0px @color__p--text;
         }
     }
 
@@ -216,7 +216,7 @@
 
         .timestamp {
 
-            color: fade(@color-swatch5, 50%);
+            color: fade(@color__p--text, 50%);
             display: inline-block;
             line-height: 1.5;
             position: absolute;

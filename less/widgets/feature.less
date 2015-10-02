@@ -1,5 +1,5 @@
 // ------------------------------------
-// Form Template: CSS > Widgets > Feature
+// Scribe Template: CSS > Widgets > Feature
 // ------------------------------------
 
 
@@ -124,6 +124,7 @@
 .feature__headline {
     margin: 15px 0;
     padding: 0;
+    color: @color__feature-headline--text;
 
     @media @bp-global-medium {
         margin: 10px 0;
@@ -152,6 +153,7 @@
 .feature__strapline {
     margin: 15px 0;
     padding: 0;
+    color: @color__feature-strapline--text;
 
     @media @bp-global-medium {
         margin: 10px 0;
@@ -178,14 +180,16 @@
 
 .feature__button {
     margin: 15px 0;
-    box-shadow: inset 0px 0px 0px 2px @color-swatch1;
-    color: @color-swatch1;
+    box-shadow: inset 0px 0px 0px 2px @color__feature-button--border;
+    color: @color__feature-button--text;
+    background-color: @color__feature-button--background;
 
     @media @bp-global-medium, @bp-global-small {
         margin: 10px 0;
     }
 
     &:hover {
-        background-color: fade(@color-swatch1, 7%);
+        background-color: @color__feature-button--background--hover;
+
     }
 }

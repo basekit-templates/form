@@ -149,5 +149,88 @@
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         }
+    },
+    "styles": {
+        "colors": {
+            "color__primary" : "color-swatch2",
+            "color__secondary" : "color-swatch7"
+        },
+        "site": {
+            "color__body--background" : "@color-swatch1",
+            "color__link--text" : "@color__secondary",
+            "color__companyname--text" : "@color-swatch1"
+        },
+        "typography": {
+            "color__h1--text": "@color-swatch4",
+            "color__h2--text": "@color-swatch4",
+            "color__h3--text": "@color-swatch4",
+            "color__h4--text": "@color-swatch4",
+            "color__p--text": "@color-swatch5"
+        },
+        "button": {
+            "color__button--background" : "transparent",
+            "color__button--text" : "@color-swatch3",
+            "color__button--background--hover" : "fade(@color__button--text, 7%)",
+            "color__button--text--hover" : "@color__button--text",
+            "color__button--border" : "@color-swatch3"
+        },
+        "header": {
+            "color__header--background" : "@color__body--background"
+        },
+        "navigation": {
+            "color__navigation--text" : "@color-swatch6",
+            "color__navigation-item--text--selected" : "@color__p--text",
+            "color__navigation-item--background--selected" : "@color__primary",
+            "color__navigation--icon" : "@color-swatch7"
+        },
+        "feature": {
+            "color__feature-headline--text" : "@color__body--background",
+            "color__feature-strapline--text" : "@color__body--background",
+            "color__feature-button--text" : "@color__body--background",
+            "color__feature-button--border" : "@color__body--background",
+            "color__feature-button--background" : "transparent",
+            "color__feature-button--background--hover" : "fade(@color__feature-button--border, 7%)"
+        },
+        "forms": {
+            "color__form-legend--text" : "@color__p--text",
+            "color__form-legend--background" : "@color__primary"
+        },
+        "gallery": {
+            "color__gallery-caption--background" : "fade(@color__p--text, 50%)",
+            "color__gallery-title--text" : "@color__body--background",
+            "color__gallery-description--text" : "@color__body--background"
+        },
+        "slideshow": {
+            "color__slideshow-caption--background" : "fade(@color__body--background, 80%)",
+            "color__slideshow-title--text" : "@color__p--text",
+            "color__slideshow-description--text" : "@color__p--text"
+        },
+        "socialicons": {
+            "color__socialicons--icon" : "@color__button--border",
+            "color__socialicons--icon--hover" : "@color__button--border",
+            "color__socialicons--icon--background" : "@color__button--background"
+        },
+        "blog": {
+            "color__blogsearch-legend--background" : "@color__form-legend--background",
+            "color__blogsearch-legend--text" : "@color__form-legend--text",
+            "color__blogpostlist-article--background" : "@color__primary",
+            "color__blogpost-title--background" : "@color__primary",
+            "color__blogpost-title--text" : "@color__p--text"
+        },
+        "ecommerce": {
+            "color__ecomproductslist-filters--background" : "@color__primary",
+            "color__ecomproductslist-product-title--text" : "@color__p--text",
+            "color__ecomproductslist-product-price--text" : "@color__p--text",
+            "color__ecomproduct--background" : "@color__primary",
+            "color__ecomproduct-images--background" : "lighten(desaturate(@color__primary, 80%), 14%)",
+            "color__ecomproduct-title--text" : "@color__p--text",
+            "color__ecomproduct-price--text" : "@color__p--text"
+        },
+        "menu": {
+            "color__menusections--background" : "@color__primary--alt",
+            "color__menu--background" : "fade(@color__p--text, 3%)",
+            "color__menu-section-header--background" : "@color__primary",
+            "color__menu-section-featured--background" : "@color__primary"
+        }
     }
 }

@@ -1,9 +1,12 @@
 // -----------------------------
-// Form Template: CSS > Widgets > Content Widget
+// Scribe Template: CSS > Widgets > Content Widget
 // -----------------------------
 
 
-
+h1, .heading--1 {color: @color__h1--text;}
+h2, .heading--2 {color: @color__h2--text;}
+h3, .heading--3 {color: @color__h3--text;}
+h4, .heading--4 {color: @color__h4--text;}
 
 .content, .post-body {
 
@@ -107,12 +110,12 @@
 
 
 	a {
-		box-shadow: inset 0px -1px 0px 0px @color-swatch7;
+		box-shadow: inset 0px -1px 0px 0px @color__link--text;
 		display: inline-block;
 		line-height: 1.5;
 		&:hover {
 			text-decoration: none;
-			box-shadow: inset 0px -2px 0px 0px @color-swatch7;
+			box-shadow: inset 0px -2px 0px 0px @color__link--text;
 		}
 	}
 
@@ -188,7 +191,7 @@
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
 				box-sizing: border-box;
-				border-right: 1px solid fade(@font-swatch5-color, 20%);
+				border-right: 1px solid fade(@color__p--text, 20%);
 				font-family: @font-swatch1-font-family;
 				content: counter(ordered-counter);
 				counter-increment: ordered-counter;
@@ -211,8 +214,8 @@
 		text-align: center;
 		font-size: @font-swatch4-font-size;
 		line-height: @font-swatch4-line-height;
-		border-top: 1px solid fade(@color-swatch5, 10%);
-		border-bottom: 1px solid fade(@color-swatch5, 10%);
+		border-top: 1px solid fade(@color__p--text, 10%);
+		border-bottom: 1px solid fade(@color__p--text, 10%);
 		padding: 1.5em 50px;
 		width: 70%;
 		margin: 1.8em auto;
@@ -230,7 +233,7 @@
 		}
 
 		&:before, &:after {
-			color: @font-swatch4-color;
+			color: @color__h4--text;
 			position: absolute;
 			font-size: 90px;
 			display: inline-block;
@@ -267,9 +270,9 @@
 		padding: 1em;
 		border: none;
 		border-radius: 0;
-		background-color: fade(@color-swatch5, 10%);
+		background-color: fade(@color__p--text, 10%);
 		overflow: auto;
-		color: @font-swatch5-color;
+		color: @color__p--text;
 	}
 
 
@@ -282,7 +285,7 @@
 	code {
 		font-size: 0.9em;
 		background-color: transparent;
-		color: @font-swatch5-color;
+		color: @color__p--text;
 	}
 
 
@@ -316,14 +319,14 @@
 
 	td, th {
 		border: none;
-		background-color: lighten(desaturate(@color-swatch2, 80%), 14%);
-		color: @font-swatch5-color;
+		background-color: lighten(desaturate(@color__primary, 80%), 14%);
+		color: @color__p--text;
 	}
 
 	// Thead
 
 	table thead td {
-		background-color: @color-swatch2;
+		background-color: @color__primary;
 	}
 
 
@@ -335,7 +338,7 @@
 
 	hr {
 		height: 5px;
-		background-color: @color-swatch2;
+		background-color: @color__primary;
 		border: none;
 		margin: 2em 0;
 

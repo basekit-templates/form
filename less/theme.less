@@ -1,15 +1,6 @@
 // ------------------------------
-// Form Template: CSS > Theme
+// Scribe Template: CSS > Theme
 // ------------------------------
-
-// 1. #Global Breakpoints
-// 2. #Color Swatches
-// 3. #Floating Footer Fix
-// 4. #Header
-// 5. #Footer
-// 6. #Main Zone
-// 7. #Typography
-
 
 
 
@@ -32,19 +23,12 @@
 
 
 
-// ------------------------------
-// 2. #Color Swatches
-// ------------------------------
 
 
-@content-background: @color-swatch1;
-@color-swatch2-alt: darken(desaturate(@color-swatch2, 10%), 5%);
-@color-swatch7-alt: lighten(saturate(@color-swatch7, 1%), 4%);
-@color-swatch7-hover: darken(@color-swatch7, 10%);
 
 
 body {
-    background-color: @content-background;
+    background-color: darken(@color__body--background, 12%);
 }
 
 
@@ -53,10 +37,17 @@ body {
 
 
 .page-content {
+    background-color: @color__body--background;
 
     @media @bp-global-above-fullwidth {
         width: 2000px;
         margin: 0 auto;
+    }
+
+    // Container
+
+    .container {
+
     }
 }
 
@@ -130,8 +121,9 @@ body {
 
 
 .template-header {
-    box-shadow: 0px 1px 0px 0px darken(@color-swatch1, 5%);
+    box-shadow: 0px 1px 0px 0px darken(@color__body--background, 5%);
     margin-bottom: -1px;
+    background-color: @color__header--background;
 
     // Container
 
@@ -233,7 +225,7 @@ body {
     min-width: 50px;
 
     @media @bp-global-small {
-        border-left: 1px solid darken(@color-swatch1, 5%);
+        border-left: 1px solid darken(@color__body--background, 5%);
         padding-left: 6px;
     }
 }
@@ -252,7 +244,7 @@ body {
 
 
 .template-footer {
-    box-shadow: 0px -1px 0px 0px darken(@color-swatch1, 5%);
+    box-shadow: 0px -1px 0px 0px darken(@color__body--background, 5%);
 
 
     // Container
@@ -342,7 +334,7 @@ body {
 
 
 a {
-	color: @color-swatch7;
+	color: @color__link--text;
     &:hover {
         text-decoration: none;
     }

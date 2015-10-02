@@ -1,5 +1,5 @@
 // ---------------------------------------------------
-// Form Template: CSS > Widgets > Pagination (component)
+// Scribe Template: CSS > Widgets > Pagination (component)
 // ---------------------------------------------------
 
 
@@ -45,17 +45,17 @@
 
     @media @bp-global-large, @bp-global-medium {
         .pagination-item:nth-child(2n) .button--pagination {
-            background-color: @color-swatch7-alt;
+            background-color: @color__secondary-alt;
         }
     }
 
     @media @bp-global-small {
 
         .pagination-item:nth-child(4n) .button--pagination, .pagination-item:nth-child(4n-3) .button--pagination {
-            background-color: @color-swatch7;
+            background-color: @color__secondary;
         }
         .pagination-item:nth-child(4n-2) .button--pagination, .pagination-item:nth-child(4n-1) .button--pagination {
-            background-color: @color-swatch7-alt;
+            background-color: @color__secondary-alt;
         }
     }
 
@@ -69,8 +69,8 @@
 
 
     .button--pagination {
-        background: @color-swatch7;
-        color: @color-swatch6;
+        background: @color__secondary;
+        color: @color__body--background;
         font-family: @font-swatch7-font-family;
         font-size: @font-swatch5-font-size;
         line-height: 1;
@@ -89,7 +89,7 @@
         }
 
         &:hover {
-            background: @color-swatch7-hover !important;
+            background: darken(@color__secondary, 10%) !important;
         }
 
 
@@ -101,7 +101,7 @@
 
         &:before, &:after {
             display: inline-block;
-            color: @color-swatch6;
+            color: @color__body--background;
             text-align: center;
             margin-right: 26px;
             font-size: 3em;
@@ -134,7 +134,7 @@
     // Control Text
 
     .control-text {
-        box-shadow: inset 0px -1px 0px 0px fade(@color-swatch6, 30%);
+        box-shadow: inset 0px -1px 0px 0px fade(@color__body--background, 30%);
         display: inline-block;
         line-height: 1.5;
     }
@@ -196,8 +196,8 @@
             flex: 1 1 50%;
         }
         .button--pagination {
-            background: @color-swatch2;
-            color: @font-swatch5-color;
+            background: @color__primary;
+            color: @color__p--text;
         }
     }
 }

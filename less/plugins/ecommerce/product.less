@@ -1,5 +1,5 @@
 // ------------------------------------------------
-// Form Template: CSS > Plugins > Ecommerce > Product
+// Scribe Template: CSS > Plugins > Ecommerce > Product
 // ------------------------------------------------
 
 
@@ -66,7 +66,7 @@
     -webkit-flex: 0 1 50%;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
-    background-color: lighten(desaturate(@color-swatch2, 80%), 14%);
+    background-color: @color__ecomproduct-images--background;
     padding: 1px 0;
 }
 
@@ -173,7 +173,7 @@
 
 .ecom-view-more {
     .button;
-    background-color: lighten(desaturate(@color-swatch2, 80%), 14%);
+    background-color: lighten(desaturate(@color__primary, 80%), 14%);
     position: absolute;
     width: 80px;
     height: 80px;
@@ -190,7 +190,7 @@
     padding: 0;
 
     &:hover {
-        background-color: lighten(desaturate(@color-swatch2, 80%), 14%);
+        background-color: lighten(desaturate(@color__primary, 80%), 14%);
     }
 
     @media @bp-global-medium {
@@ -303,7 +303,7 @@
     -webkit-flex: 0 1 50%;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
-    background: @color-swatch2;
+    background: @color__ecomproduct--background;
 
     @media @bp-global-large {
         padding: 60px 70px;
@@ -324,7 +324,7 @@
 
 
 .product-title {
-    color: @font-swatch5-color;
+    color: @color__ecomproduct-title--text;
     @media @bp-global-large {
         font-size: @font-swatch1-font-size;
         line-height: @font-swatch1-line-height;
@@ -347,7 +347,7 @@
 
 
 .ecomproduct__product-price {
-    color: @font-swatch5-color;
+    color: @color__ecomproduct-price--text;
     @media @bp-global-large {
         font-size: @font-swatch3-font-size;
         line-height: @font-swatch3-line-height;
@@ -406,7 +406,7 @@
 
     .form .button {
         &.added {
-            background-color: @color-swatch1;
+            background-color: @color__body--background;
             &:before {
                 content: '\f00c'
             }
@@ -456,7 +456,7 @@
         .label {
             font-size: 13px;
             line-height: 1;
-            color: fade(@font-swatch5-color, 70%);
+            color: fade(@color__p--text, 70%);
             display: block;
             padding-bottom: 0;
         }
@@ -494,7 +494,7 @@
 
     .product-attribute-title {
         line-height: 2;
-        color: fade(@font-swatch5-color, 80%);
+        color: fade(@color__p--text, 80%);
         padding: 0;
         display: block;
         margin: 0 0 0.25em 0;
@@ -556,7 +556,7 @@
 
     .category-link, .tag-link {
         .underline;
-        color: @font-swatch5-color;
+        color: @color__p--text;
         @media @bp-global-medium {
             font-size: bkscale(@font-swatch5-font-size, 0.9);
             line-height: bkscale(@font-swatch5-line-height, 0.9);
