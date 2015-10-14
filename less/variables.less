@@ -1,32 +1,36 @@
+@color__primary--alt : darken(desaturate(@color__primary, 10%), 5%);
+@color__secondary-alt : lighten(saturate(@color__secondary, 1%), 4%);
+
+
+
+
 // Colors
 @color__primary : @color-swatch2;
-@color__primary--alt : darken(desaturate(@color__primary, 10%), 5%);
 @color__secondary : @color-swatch7;
-@color__secondary-alt : lighten(saturate(@color__secondary, 1%), 4%);
+
 
 
 // Site
 @color__body--background : @color-swatch1;
 @color__link--text : @color__secondary;
-@color__companyname--text : @color-swatch4;
+@color__companyname--text : @font-swatch10-color;
 
 
 // Typography
-@color__p--text : @color-swatch5;
-@color__h1--text : @color-swatch4;
-@color__h2--text : @color-swatch4;
-@color__h3--text : @color-swatch4;
-@color__h4--text : @color-swatch4;
+@color__p--text : @font-swatch5-color;
+@color__h1--text : @font-swatch1-color;
+@color__h2--text : @font-swatch2-color;
+@color__h3--text : @font-swatch3-color;
+@color__h4--text : @font-swatch4-color;
 
 
 // Header
 @color__header--background : @color__body--background;
 
 // Navigation
-@color__navigation--text : @color-swatch6;
-@color__navigation-item--text--selected : @color__p--text;
+@color__navigation--text : @font-swatch6-color;
+@color__navigation--text--selected : @color__p--text;
 @color__navigation-item--background--selected : @color__primary;
-@color__navigation--icon : @color-swatch7;
 
 
 // Forms
@@ -36,10 +40,10 @@
 
 // Buttons
 @color__button--background : transparent;
-@color__button--text : @color-swatch3;
+@color__button--text : @font-swatch7-color;
 @color__button--background--hover : fade(@color__button--text, 7%);
 @color__button--text--hover : @color__button--text;
-@color__button--border : @color-swatch3;
+@color__button--border : @font-swatch7-color;
 
 
 // Gallery
@@ -55,8 +59,8 @@
 
 
 // Feature
-@color__feature-headline--text : @color__body--background;
-@color__feature-strapline--text : @color__body--background;
+@color__feature-headline--text : @font-swatch8-color;
+@color__feature-strapline--text : @font-swatch9-color;
 @color__feature-button--text : @color__body--background;
 @color__feature-button--border : @color__body--background;
 @color__feature-button--background : transparent;
@@ -68,6 +72,8 @@
 @color__menu--background : fade(@color__p--text, 3%);
 @color__menu-section-header--background : @color__primary;
 @color__menu-section-featured--background : @color__primary;
+
+
 
 
 // Social Icons
@@ -87,8 +93,6 @@
 // Ecommerce
 @color__ecomproductslist-filters--background : @color__primary;
 @color__ecomproductslist-product-title--text : @color__p--text;
-@color__ecomproductslist-product-price--text : @color__p--text;
-
 @color__ecomproduct--background : @color__primary;
 @color__ecomproduct-images--background : lighten(desaturate(@color__primary, 80%), 14%);
 @color__ecomproduct-title--text : @color__p--text;

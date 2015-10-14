@@ -190,7 +190,7 @@ html, body {
 
 .navigation-body .navigation-item.selected:not(.open) > .item-name {
 	background-color: @color__navigation-item--background--selected;
-	color: @color__navigation-item--text--selected;
+	color: @color__navigation--text--selected;
 }
 
 // Hover
@@ -328,7 +328,7 @@ html, body {
 
 
 .navigation-list--children .navigation-item.selected .item-name {
-	color: @color__navigation-item--text--selected;
+	color: @color__navigation--text--selected;
 }
 
 
@@ -344,7 +344,7 @@ html, body {
 .navigation-toggle {
 	.animation;
 	// Displays as icon's middle bar
-	background-color: @color__navigation--icon;
+	background-color: @color-swatch7;
 	background-clip: content-box;
 	width: 47px;
 	height: 47px;
@@ -368,7 +368,7 @@ html, body {
 		position: absolute;
 		left: 10px;
 		display: block;
-		background: @color__navigation--icon;
+		background: @color-swatch7;
 		margin-right: 0;
 		margin-left: 0;
 		-webkit-transition: all 0.25s ease-in-out;
@@ -393,13 +393,13 @@ html, body {
 
 
 	&:hover {
-		background-color: darken(@color__navigation--icon, 10%);
-		border-color: darken(@color__navigation--icon, 10%);
-		box-shadow: 0px 0px 0px 7px fade(@color__navigation--icon, 10%);
+		background-color: darken(@color-swatch7, 10%);
+		border-color: darken(@color-swatch7, 10%);
+		box-shadow: 0px 0px 0px 7px fade(@color-swatch7, 10%);
 
 
 		&:after, &:before {
-			background: darken(@color__navigation--icon, 10%);
+			background: darken(@color-swatch7, 10%);
 		}
 	}
 
@@ -407,7 +407,7 @@ html, body {
 	// ------------------------------
 
 	.open & {
-		background-color: fade(@color__navigation--icon, 0%);
+		background-color: fade(@color-swatch7, 0%);
 		z-index: 100000;
 		position: relative;
 

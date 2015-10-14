@@ -150,50 +150,41 @@
             "letter-spacing": "inherit"
         }
     },
-    "styles": {
+      "styles": {
         "colors": {
-            "color__primary" : "color-swatch2",
-            "color__secondary" : "color-swatch7"
+            "color__primary" : "@color-swatch2",
+            "color__secondary" : "@color-swatch7"
         },
         "site": {
             "color__body--background" : "@color-swatch1",
             "color__link--text" : "@color__secondary",
-            "color__companyname--text" : "@color-swatch1"
+            "color__companyname--text" : "@font-swatch10-color"
         },
         "typography": {
-            "color__h1--text": "@color-swatch4",
-            "color__h2--text": "@color-swatch4",
-            "color__h3--text": "@color-swatch4",
-            "color__h4--text": "@color-swatch4",
-            "color__p--text": "@color-swatch5"
-        },
-        "button": {
-            "color__button--background" : "transparent",
-            "color__button--text" : "@color-swatch3",
-            "color__button--background--hover" : "fade(@color__button--text, 7%)",
-            "color__button--text--hover" : "@color__button--text",
-            "color__button--border" : "@color-swatch3"
+            "color__p--text" : "@font-swatch5-color",
+            "color__h1--text" : "@font-swatch1-color",
+            "color__h2--text" : "@font-swatch2-color",
+            "color__h3--text" : "@font-swatch3-color",
+            "color__h4--text" : "@font-swatch4-color"
         },
         "header": {
             "color__header--background" : "@color__body--background"
         },
         "navigation": {
-            "color__navigation--text" : "@color-swatch6",
-            "color__navigation-item--text--selected" : "@color__p--text",
-            "color__navigation-item--background--selected" : "@color__primary",
-            "color__navigation--icon" : "@color-swatch7"
+            "color__navigation--text" : "@font-swatch6-color",
+            "color__navigation--text--selected" : "@color__p--text",
+            "color__navigation-item--background--selected" : "@color__primary"
         },
-        "feature": {
-            "color__feature-headline--text" : "@color__body--background",
-            "color__feature-strapline--text" : "@color__body--background",
-            "color__feature-button--text" : "@color__body--background",
-            "color__feature-button--border" : "@color__body--background",
-            "color__feature-button--background" : "transparent",
-            "color__feature-button--background--hover" : "fade(@color__feature-button--border, 7%)"
-        },
-        "forms": {
+        "form": {
             "color__form-legend--text" : "@color__p--text",
             "color__form-legend--background" : "@color__primary"
+        },
+        "button": {
+            "color__button--background" : "transparent",
+            "color__button--text" : "@font-swatch7-color",
+            "color__button--background--hover" : "fade(@color__button--text, 7%)",
+            "color__button--text--hover" : "@color__button--text",
+            "color__button--border" : "@font-swatch7-color"
         },
         "gallery": {
             "color__gallery-caption--background" : "fade(@color__p--text, 50%)",
@@ -204,6 +195,20 @@
             "color__slideshow-caption--background" : "fade(@color__body--background, 80%)",
             "color__slideshow-title--text" : "@color__p--text",
             "color__slideshow-description--text" : "@color__p--text"
+        },
+        "feature": {
+            "color__feature-headline--text" : "@font-swatch8-color",
+            "color__feature-strapline--text" : "@font-swatch9-color",
+            "color__feature-button--text" : "@color__body--background",
+            "color__feature-button--border" : "@color__body--background",
+            "color__feature-button--background" : "transparent",
+            "color__feature-button--background--hover" : "fade(@color__feature-button--border, 7%)"
+        },
+        "menu": {
+            "color__menusections--background" : "@color__primary--alt",
+            "color__menu--background" : "fade(@color__p--text, 3%)",
+            "color__menu-section-header--background" : "@color__primary",
+            "color__menu-section-featured--background" : "@color__primary"
         },
         "socialicons": {
             "color__socialicons--icon" : "@color__button--border",
@@ -220,17 +225,10 @@
         "ecommerce": {
             "color__ecomproductslist-filters--background" : "@color__primary",
             "color__ecomproductslist-product-title--text" : "@color__p--text",
-            "color__ecomproductslist-product-price--text" : "@color__p--text",
             "color__ecomproduct--background" : "@color__primary",
             "color__ecomproduct-images--background" : "lighten(desaturate(@color__primary, 80%), 14%)",
             "color__ecomproduct-title--text" : "@color__p--text",
             "color__ecomproduct-price--text" : "@color__p--text"
-        },
-        "menu": {
-            "color__menusections--background" : "@color__primary--alt",
-            "color__menu--background" : "fade(@color__p--text, 3%)",
-            "color__menu-section-header--background" : "@color__primary",
-            "color__menu-section-featured--background" : "@color__primary"
         }
     }
 }

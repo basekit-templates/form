@@ -42,7 +42,7 @@
     .fieldset--search {
         padding: 20px 70px;
         width: 33.33%;
-        background-color: darken(desaturate(@color__ecomproductslist-filters--background, 10%), 5%);
+        background-color: @color__ecomproductslist-filters--background;
 
         @media @bp-global-small{
             width: auto;
@@ -68,7 +68,7 @@
 .ecomproductslist__fieldset--filters {
     padding: 20px 70px;
     width: 66.66%;
-    background-color: @color__ecomproductslist-filters--background;
+    background-color: darken(desaturate(@color__ecomproductslist-filters--background, 10%), 5%);
 
     @media  @bp-global-small{
          width: 100%;
@@ -581,7 +581,7 @@
 .product-item-price {
     font-size: bkscale(@font-swatch5-font-size, 0.82);
     line-height: bkscale(@font-swatch5-line-height, 0.82);
-    color: @color__ecomproductslist-product-price--text;
+
     @media @mobile {
         font-size: bkscale(@font-swatch5-font-size, 0.7);
         line-height: bkscale(@font-swatch5-line-height, 0.7);
