@@ -4,7 +4,7 @@
 
 	{% include "includes/head.twig" %}
 
-	<body class="{{ page.backgroundClass }}">
+	<body class="{{ page.backgroundClass }}" {{ isV10sSite ? 'id="migrated-site"' : '' }}>
 
 		<div class="page-content">
 			<div class="container">
