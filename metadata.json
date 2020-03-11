@@ -1,5 +1,6 @@
 {
     "name":"Form",
+    "versionTenCompatible": 1,
     "widgetVersion": 2,
     "thumbnail":"form.png",
     "templateType":"ecommerce",
