@@ -11,14 +11,14 @@
 
 
 // Template wrapper (replace with corresponding template classes)
-.main.wrapper {
+.container.wrapper {
   width: 100%;
   max-width: 100%;
   margin: 0;
 }
   
 // Main content spacing (replace with corresponding template class)
-.main {
+.page-content > .container {
   padding: 0;
 }
 
@@ -27,6 +27,42 @@
   overflow: inherit;
 }
 
+.zone-content .widget[data-name="row"] {
+    @media @bp-global-large {
+        margin: 0 0;
+    }
+    @media @bp-global-medium {
+        margin: 0 0;
+    }
+    @media @bp-global-small {
+        margin: 0 0;
+    }
+}
+
+[data-name="row"] .ecomproductslist__form-group .ecomproductslist__button {
+    @media @bp-global-large {
+        width: 100px;
+    }
+    @media @bp-global-medium {
+        width: auto;
+        padding-left: 8px;
+    }
+    @media @bp-global-small {
+        width: 100px;
+        padding-left: 8px;
+    }
+}
+
+[data-name="row"] .ecomproductslist__form-group .ecomproductslist__button:after {
+    @media @bp-global-large {
+        left: inherit;
+        right: 8px;
+    }
+    @media @bp-global-small {
+        left: inherit;
+        right: 8px;
+    }
+}
 
 
 
@@ -42,18 +78,6 @@
 @spacing__first--mobile:  20px;
 
 @spacing--other: 30px;
-
-
-// Applies spacing to widgets to mimic container width
-.empty-zone,
-#page-zones__main:empty,
-#page-zones__main > .widget:not(.row),
-.row:not(.widget):not(.row--width-no-padding) .row__container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: @container-width;
-  width: 90%;
-}
 
 
 // Move spacing to first widget in the main zone (not sections)
